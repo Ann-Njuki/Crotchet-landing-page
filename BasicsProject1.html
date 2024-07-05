@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crochet handcraft</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+      }
+      h1 {
+        color: #18224b;
+      }
+      h2 {
+        color: #424874;
+      }
+      .container {
+        margin: 120px auto;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        background: #cab8ff;
+        border: 1px solid hsl(278, 42%, 45%);
+        border-radius: 50px 4px;
+      }
+      .pictureContainer {
+        margin: 120px auto;
+        max-width: 600px;
+        margin: 4px auto;
+        padding: 15px 60px;
+        background: linear-gradient(
+          109.6deg,
+          rgb(177, 173, 219) 11.2%,
+          rgb(245, 226, 226) 91.1%
+        );
+        border: 1px solid hsl(278, 42%, 45%);
+        border-radius: 50px 4px;
+      }
+      img {
+        border-radius: 4px 4px;
+        margin: 1px;
+      }
+      button {
+        font-size: medium;
+        display: block;
+        text-align: center;
+        background-color: white;
+        padding: 10px;
+        margin: 0 auto;
+        border: 1px solid #0d4394;
+        border-radius: 25px /50%;
+        box-shadow: 2px 2px 4px #851de0;
+        transition: 200ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #9a47cb;
+      }
+      p {
+        line-height: 1.2;
+      }
+      .art {
+        text-decoration: none;
+      }
+      .art:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Style with Our Crochet Creations</h1>
+      <h2>Elegance and Artisanal Flair in Every Stitch</h2>
+      <p>
+        Indulge in the charm of handcrafted elegance with our exquisite
+        collection of crochet fashion.<br />
+        Discover the artistry of crochet with our timeless creations, where
+        traditional techniques meet contemporary design.
+      </p>
+
+      <hr />
+      <div class="pictureContainer">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/695/original/fd91067d1ad98c9d497e556e202586dc.jpg?1707512518"
+          alt
+          description="crotchet outfit"
+          width="150"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/694/original/3edf8d47b08eb59176477b217036dd0e.jpg?1707512159"
+          alt
+          description="crochet dolls"
+          width="133"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/749/original/1cb0419371065ff05de068f6746fd965.jpg?1707551741"
+          alt
+          description="crochet wear"
+          width="160"
+        />
+      </div>
+      <button>catalogue</button>
+
+      <p>
+        <strong> Looking</strong> for a cozy companion in our
+        <em>cuddly teddy bears</em> or <em>fashion garments</em> with intricate
+        details?<br />our collection has something for every crochet enthusiast.
+        Immerse yourself in the world of crochet couture and experience the
+        beauty of craftsmanship firsthand. Browse our collection now and add a
+        touch of handmade luxury <br />to your style repertoire.
+      </p>
+
+      <p class="footer">
+        This page was constructed by
+        <a href="https://www.linkedin.com/in/ann-njuki/" target="_blank">
+          Ann Njuki
+        </a>
+        <br />
+        <a
+          class="art"
+          href="https://en.wikipedia.org/wiki/Crochet"
+          target="_blank"
+        >
+          CrochetyArt
+        </a>
+        <span class="text" style="position: relative; top: 2px"> © 2024 </span>
+      </p>
+    </div>
+    <script>
+      function itemchoice() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let item = prompt(
+          "What would you like to enquire about:Teddybear,outfit?"
+        );
+        item = item.toLowerCase().trim();
+        if (item === "teddybear") {
+          alert(
+            `Hi ${name}👋, We have sent the teddybear catalogue to your email`
+          );
+        } else if (item === "outfit") {
+          alert(
+            `Hi ${name}👋, We have sent the outfits catalogue to your email`
+          );
+        } else {
+          alert(
+            `Hi ${name}👋, We have sent the teddybear and garment catalogue to your email`
+          );
+        }
+      }
+      let cataloguebutton = document.querySelector("button");
+      cataloguebutton.addEventListener("click", itemchoice);
+    </script>
+  </body>
+</html>
